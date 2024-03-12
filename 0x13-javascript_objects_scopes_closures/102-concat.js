@@ -1,6 +1,5 @@
 #!/usr/bin/node
 const fs = require('fs');
-const path = require('path');
 
 // Ensure correct number of command line arguments
 if (process.argv.length !== 5) {
