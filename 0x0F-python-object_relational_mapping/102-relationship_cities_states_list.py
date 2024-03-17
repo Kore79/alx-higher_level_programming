@@ -29,7 +29,7 @@ def list_cities(username, password, database):
         Session = sessionmaker(bind=engine)
         session = Session()
 
-        # Query all City objects and their linked State objects via relationship
+        # Query all City objects
         cities = session.query(City).order_by(City.id).all()
 
         # Print results
