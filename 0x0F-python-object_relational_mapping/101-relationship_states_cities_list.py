@@ -6,7 +6,7 @@ This script lists all State objects, and corresponding City objects, contained i
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from relationship_state import Base, State
+from relationship_state import Base, State, City
 
 def list_states_and_cities(username, password, database):
     """
