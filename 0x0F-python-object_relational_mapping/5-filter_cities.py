@@ -27,7 +27,7 @@ def list_cities_by_state(username, password, database, state_name):
         cursor = conn.cursor()
 
         # Execute query using parameterized query to prevent SQL injection
-        query = "SELECT cities.id, cities.name, states.name FROM cities \
+        query = "SELECT cities.id, cities.name FROM cities \
                  JOIN states ON cities.state_id = states.id WHERE states.name = %s \
                  ORDER BY cities.id ASC"
         cursor.execute(query, (state_name,))
